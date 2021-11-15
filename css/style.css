@@ -34,8 +34,8 @@ a, a:link {
 
 #gnb > li {
     width: 120px;
-    height: 30px;
-    line-height: 30px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
 }
 
@@ -83,17 +83,6 @@ article hgroup h3, .contact_wrap hgroup h3 {
     font-size: 1.25rem;
 }
 
-article hgroup h3::before {
-    content: "";
-    display: block;
-    width: 50px;
-    height: 2px;
-    background: #000;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 .biz_list {
     display: flex;
     justify-content: space-between;
@@ -103,20 +92,94 @@ article hgroup h3::before {
     position: relative;
 }
 
+.biz_list li h4 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.125rem;
+}
+
 .more {
+    width: 100%;
     position: absolute;
+    top: 40%;
+    transform: translateY((-40%));
+    text-align: center;
     display: none;
+    transition-duration: .3;
+}
+
+.more p {
+    font-size: 1.125rem;
+}
+
+.biz_more {
+    margin-top: 40px;
+    padding: 5px 15px;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .3);
+}
+
+.biz_list li:hover img {
+    opacity: .3;
+    transition: all .3s;
+}
+
+.biz_list li:hover .more{
+    display: block;
+}
+
+.biz_more:hover {
+    background: #194151;
+    color: #fff;
+    transition: all .3s;
 }
 
 .achievements_box {
+    width: 1440px;
+    height: 780px;
     display: flex;
+    justify-content: space-between;
 }
+
 .box_left {
     width: 60%;
 }
-.box_right {
-    width: 40%;
+
+.box_left img {
+    width: 100%;
+    height: 100%;
 }
+
+.left_top {
+    height: 50%;
+}
+
+.left_bottom {
+    height: 49%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+
+.left_bottom div:nth-child(1) {
+    width: 49%;
+}
+
+.left_bottom div:nth-child(2) {
+    width: 49%;
+}
+
+.box_right {
+    width: 39%;
+}
+
+.box_right img {
+    width: 100%;
+    height: 100%;
+}
+
 .contact_wrap {
     max-width: 1440px;
     margin: 0 auto;
