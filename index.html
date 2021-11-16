@@ -167,10 +167,19 @@
                 <h3>상담 / 문의</h3>
             </hgroup>
                 <ul class="contact_list">
-                    <li><a href="#">공지사항</a></li>
-                    <li><a href="#">1:1 문의</a></li>
-                    <li><a href="#">전화상담</a></li>
-                    <li><a href="#">오시는 길</a></li>
+                    <li><a href="#">
+                        <i class="fas fa-question"></i>
+                        <p>1:1 문의</p></a>
+                    </li>
+                    <li><a href="#">
+                        <i class="fas fa-mobile-alt"></i>
+                        <p>전화상담</p></a>
+                    </li>
+                    <li><a href="#">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>오시는 길</p></a>
+                        <div id="map" style="width:500px;height:400px;"></div>
+                    </li>
                 </ul>
         </div>
     </aside>
@@ -194,7 +203,16 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b3db90323c80db33bcc386246dffa8da"></script>
+    <script>
+        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+    var options = { //지도를 생성할 때 필요한 기본 옵션
+	center: new kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
+	level: 3 //지도의 레벨(확대, 축소 정도)
+    };
 
+    var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+    </script>
     <script src="script/main.js"></script>
 </body>
 </html>
