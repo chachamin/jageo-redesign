@@ -229,6 +229,16 @@ article hgroup h3, .contact_wrap hgroup h3 {
     justify-content: space-between;
 }
 
+.contact_list li {
+    width: 24%;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.contact_list li p {
+    font-size: 1.125rem;
+}
+
 .footer_wrap {
     width: 100%;
     height: 100px;
