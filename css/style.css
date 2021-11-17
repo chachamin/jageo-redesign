@@ -3,6 +3,7 @@
 body {
     font: 16px/1.5 "Maven Pro", "Noto Sans KR", sans-serif;
     box-sizing: border-box;
+    position: relative;
 }
 
 .blind {
@@ -247,6 +248,11 @@ article hgroup h3, .contact_wrap hgroup h3 {
     transform: translate(-50% -50%);
     max-width: 500px;
     height: 600px;
+}
+
+#popup p {
+    text-align: center;
+    margin-top: 10px;
 }
 
 .footer_wrap {
