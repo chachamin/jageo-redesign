@@ -56,7 +56,7 @@
         </div>
     </header>
     <div class="slide">
-        <ul id="img">
+        <ul id="imgs">
             <li><a href="#"><img src="images/slide1.jpg" alt="슬라이드1"></a></li>
             <li><a href="#"><img src="images/slide2.jpg" alt="슬라이드2"></a></li>
             <li><a href="#"><img src="images/slide3.jpg" alt="슬라이드3"></a></li>
@@ -179,25 +179,24 @@
                         <p>1:1 문의</p>
                     </a>
                 </li>
-                <li><a href="#">
+                <li><a href="tel:032-555-0411">
                         <i class="fas fa-mobile-alt"></i>
                         <p>전화상담</p>
                     </a>
                 </li>
-                <li class="location">
+                <li id="location">
                     <div>
-                        <a href="#">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <p>오시는 길</p>
-                        </a>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>오시는 길</p>
                     </div>
                 </li>
             </ul>
             <div id="mapPopup">
-                <div id="map" style="width:480px;height:400px;"></div>
-                <div>
+                <div id="map" style="width:450px;height:400px;"></div>
+                <div class="map_text">
                     <p>주소 : 인천광역시 계양구 계산새로 71, A동 812호(계산동,하이베라스)</p>
                 </div>
+                <button class="map_close">X</button>
             </div>
         </div>
     </aside>

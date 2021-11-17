@@ -54,12 +54,12 @@ a, a:link {
     overflow: hidden;
 }
 
-#img {
+#imgs {
     width: 300%;
     height: 500px;
 }
 
-#img li {
+#imgs li {
     float: left;
     font-size: 0;
 }
@@ -72,7 +72,7 @@ a, a:link {
 article hgroup, .contact_wrap hgroup {
     text-align: center;
     text-transform: uppercase;
-    margin: 100px 0;
+    margin: 150px 0 100px 0;
 }
 
 article hgroup h2, .contact_wrap hgroup h2 {
@@ -240,19 +240,45 @@ article hgroup h3, .contact_wrap hgroup h3 {
     font-size: 1.125rem;
 }
 
+#location {
+    cursor: pointer;
+}
+
 #mapPopup {
-    /* display: none; */
+    display: none;
     position: absolute;
     top: -50%;
     left: 50%;
-    transform: translate(50%, -50%);
+    transform: translateX(-50%);
     max-width: 500px;
     height: 500px;
+    border: 1px solid #194151;
+    background: #fff;
 }
 
-#mapPopup p {
+#map {
+    margin: 30px 15px;
+}
+
+.map_text {
     text-align: center;
     margin-top: 10px;
+}
+
+.map_close {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.map_close:hover {
+    background: #194151;
+    color: #fff;
 }
 
 .footer_wrap {
