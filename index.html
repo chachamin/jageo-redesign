@@ -193,14 +193,14 @@
                     </div>
                 </li>
             </ul>
+            <div id="mapPopup">
+                <div id="map" style="width:480px;height:400px;"></div>
+                <div>
+                    <p>주소 : 인천광역시 계양구 계산새로 71, A동 812호(계산동,하이베라스)</p>
+                </div>
+            </div>
         </div>
     </aside>
-    <div id="popup">
-        <div id="map" style="width:480px;height:400px;"></div>
-        <div>
-            <p>주소 : 인천광역시 계양구 계산새로 71, A동 812호(계산동,하이베라스)</p>
-        </div>
-    </div>
     <footer>
         <div class="footer_wrap">
             <div class="footer_inner">
@@ -244,7 +244,7 @@
         marker.setMap(map);
         
         var iwContent =
-            '<div style="padding:5px;">Hello World! <br><a href="https://map.kakao.com/link/map/Hello World!,33.450701,126.570667" style="color:blue" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/link/to/Hello World!,33.450701,126.570667" style="color:blue" target="_blank">길찾기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+            '<div style="padding:5px;">중앙지반기술<br><a href="https://map.kakao.com/link/map/Hello World!,33.450701,126.570667" style="color:blue" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/link/to/Hello World!,33.450701,126.570667" style="color:blue" target="_blank">길찾기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
             iwPosition = new kakao.maps.LatLng(37.538712941583775, 126.73597923844946); //인포윈도우 표시 위치입니다
 
         // 인포윈도우를 생성합니다

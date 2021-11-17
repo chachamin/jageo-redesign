@@ -3,7 +3,6 @@
 body {
     font: 16px/1.5 "Maven Pro", "Noto Sans KR", sans-serif;
     box-sizing: border-box;
-    position: relative;
 }
 
 .blind {
@@ -223,6 +222,7 @@ article hgroup h3, .contact_wrap hgroup h3 {
 .contact_wrap {
     max-width: 1440px;
     margin: 0 auto;
+    position: relative;
 }
 
 .contact_list {
@@ -240,17 +240,17 @@ article hgroup h3, .contact_wrap hgroup h3 {
     font-size: 1.125rem;
 }
 
-#popup {
+#mapPopup {
     /* display: none; */
     position: absolute;
-    top: 50%;
+    top: -50%;
     left: 50%;
-    transform: translate(-50% -50%);
+    transform: translate(50%, -50%);
     max-width: 500px;
-    height: 600px;
+    height: 500px;
 }
 
-#popup p {
+#mapPopup p {
     text-align: center;
     margin-top: 10px;
 }
