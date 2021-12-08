@@ -29,21 +29,22 @@ a, a:link {
 }
 
 #gnb {
-    display: flex;
-    justify-content: space-between;
+    width: 600px;
+    position: relative;
 }
 
 #gnb > li {
-    width: 120px;
+    width: 150px;
     height: 40px;
+    float: left;
     line-height: 40px;
     text-align: center;
+    transition: all .3s;
 }
 
 #gnb > li >a {
     display: block;
 }
-
 
 #gnb > li > a:hover {
     font-weight: bold;
@@ -51,7 +52,26 @@ a, a:link {
 }
 
 .lnb {
+    position: absolute;
+    height: 160px;
+    background: #fff;
     display: none;
+}
+
+.lnb > li {
+    width: 150px;
+    height: 40px;
+}
+
+.lnb > li > a {
+    display: block;
+    text-align: center;
+    transition: all .3s;
+}
+
+.lnb > li > a:hover {
+    background: #194151;
+    color: #fff;
 }
 
 .slide {
@@ -112,7 +132,7 @@ article hgroup h3, .contact_wrap hgroup h3 {
     transform: translateY((-40%));
     text-align: center;
     display: none;
-    transition-duration: .3;
+    transition: all .3s;
 }
 
 .more p {
@@ -126,6 +146,7 @@ article hgroup h3, .contact_wrap hgroup h3 {
     border: 1px solid #000;
     border-radius: 10px;
     background: rgba(255, 255, 255, .3);
+    transition: all .3s;
 }
 
 .biz_list li:hover img {
@@ -140,7 +161,6 @@ article hgroup h3, .contact_wrap hgroup h3 {
 .biz_more:hover {
     background: #194151;
     color: #fff;
-    transition: all .3s;
 }
 
 .achievements_box {
@@ -153,7 +173,7 @@ article hgroup h3, .contact_wrap hgroup h3 {
 
 .achievements_box img:hover {
     transform: scale(1.2);
-    transition-duration: .3s;
+    transition: all .3s;
 }
 
 .box_left {

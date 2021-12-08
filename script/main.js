@@ -1,4 +1,10 @@
 $(function(){
+    $('#gnb > li').hover(function(){
+        $('.lnb').stop().slideDown();
+    }, function(){
+        $('.lnb').stop().slideUp();
+    })
+
     setInterval(function(){
         $("#imgs").animate({
             marginLeft: "-100%"
@@ -9,6 +15,7 @@ $(function(){
             },0)
         });   
     }, 3000);
+    
     $('#location').click(function(){
         $('#mapPopup').show();
     });
