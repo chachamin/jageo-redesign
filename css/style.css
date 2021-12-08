@@ -44,6 +44,12 @@ a, a:link {
     display: block;
 }
 
+
+#gnb > li > a:hover {
+    font-weight: bold;
+    color: #194151;
+}
+
 .lnb {
     display: none;
 }
